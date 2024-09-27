@@ -27,7 +27,7 @@ public class Main {
         printDateOfBook();
         System.out.println(metro2033.getDate());
         printAuthorOfBook();
-        System.out.println(metro2033.getAuthor().authorName + metro2033.getAuthor().authorSurname);
+        System.out.println(metro2033.getAuthor());
 
         System.out.println();
 
@@ -36,7 +36,10 @@ public class Main {
         printDateOfBook();
         System.out.println(dune.getDate());
         printAuthorOfBook();
-        System.out.println(dune.getAuthor().authorName + dune.getAuthor().authorSurname);
+        System.out.println(dune.getAuthor());
+
+        System.out.println(metro2033.equals(dune));
+        System.out.println(metro2033.hashCode());
 
     }
 }
